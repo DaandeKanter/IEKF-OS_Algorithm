@@ -6,7 +6,7 @@ Project is supervised by Dr. M. Kok, Delft University of Technology
                          Dr. Ir. A. Seth, Delft University of Technology
 
 The IEKF-OS Motion Reconstruction Algorithm is based on the following components:
-* Raw inertial 3D gyroscope measurements.
-* Raw inertial 3D accelerometer measurements.
+* Raw 3D gyroscope measurements.
+* Raw 3D accelerometer measurements.
 * The Iterated Extended Kalman Filter.
 * The system's dynamical model generated for a user-defined OpenSim model.
