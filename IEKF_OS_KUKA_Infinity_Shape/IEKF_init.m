@@ -185,8 +185,6 @@ function [IEKF, vSensor] = IEKF_init(q_init, u_init, tau_init, CovGyro1, CovAcc1
     vSensor.IMU1_AngVel(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU1_LinAcc(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU1_Gravity(:,end+1) = zeros(3,1);             % At t=0 no measurement
-%     vSensor.RotBody1_IMU1         = Rot_Body1_IMU1;         % R^{Body1IMU1}
-%     vSensor.TranslationBody1_IMU1 = Translation_Body1_IMU1;
     
     % IMU 2
 	vSensor.IMU2_AngVel           = NaN(3,0);               % Spatial movement, hence 3 DoFs	
@@ -195,8 +193,6 @@ function [IEKF, vSensor] = IEKF_init(q_init, u_init, tau_init, CovGyro1, CovAcc1
     vSensor.IMU2_AngVel(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU2_LinAcc(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU2_Gravity(:,end+1) = zeros(3,1);             % At t=0 no measurement
-%     vSensor.RotBody2_IMU2         = Rot_Body2_IMU2;         % R^{Body2IMU2}
-%     vSensor.TranslationBody2_IMU2 = Translation_Body2_IMU2;
     
     % IMU 3
 	vSensor.IMU3_AngVel           = NaN(3,0);               % Spatial movement, hence 3 DoFs	
@@ -205,8 +201,6 @@ function [IEKF, vSensor] = IEKF_init(q_init, u_init, tau_init, CovGyro1, CovAcc1
     vSensor.IMU3_AngVel(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU3_LinAcc(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU3_Gravity(:,end+1) = zeros(3,1);             % At t=0 no measurement
-%     vSensor.RotBody3_IMU3         = Rot_Body3_IMU3;         % R^{Body3IMU3}
-%     vSensor.TranslationBody3_IMU3 = Translation_Body3_IMU3;
     
     % IMU 4
 	vSensor.IMU4_AngVel           = NaN(3,0);               % Spatial movement, hence 3 DoFs	
@@ -215,8 +209,6 @@ function [IEKF, vSensor] = IEKF_init(q_init, u_init, tau_init, CovGyro1, CovAcc1
     vSensor.IMU4_AngVel(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU4_LinAcc(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU4_Gravity(:,end+1) = zeros(3,1);             % At t=0 no measurement
-%     vSensor.RotBody4_IMU4         = Rot_Body4_IMU4;         % R^{Body4IMU4}
-%     vSensor.TranslationBody4_IMU4 = Translation_Body4_IMU4;
     
     % IMU 5
 	vSensor.IMU5_AngVel           = NaN(3,0);               % Spatial movement, hence 3 DoFs	
@@ -225,8 +217,6 @@ function [IEKF, vSensor] = IEKF_init(q_init, u_init, tau_init, CovGyro1, CovAcc1
     vSensor.IMU5_AngVel(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU5_LinAcc(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU5_Gravity(:,end+1) = zeros(3,1);             % At t=0 no measurement
-%     vSensor.RotBody5_IMU5         = Rot_Body5_IMU5;         % R^{Body5IMU5}
-%     vSensor.TranslationBody5_IMU5 = Translation_Body5_IMU5;
     
     % IMU 6
 	vSensor.IMU6_AngVel           = NaN(3,0);               % Spatial movement, hence 3 DoFs	
@@ -235,8 +225,6 @@ function [IEKF, vSensor] = IEKF_init(q_init, u_init, tau_init, CovGyro1, CovAcc1
     vSensor.IMU6_AngVel(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU6_LinAcc(:,end+1)  = zeros(3,1);             % At t=0 no measurement
     vSensor.IMU6_Gravity(:,end+1) = zeros(3,1);             % At t=0 no measurement
-%     vSensor.RotBody6_IMU6         = Rot_Body6_IMU6;         % R^{Body6IMU6}
-%     vSensor.TranslationBody6_IMU6 = Translation_Body6_IMU6;
     
     %  T will store the time indices 
     vSensor.T = [];
